@@ -1,0 +1,23 @@
+<div class="card" fxLayout="column" fxLayoutAlign="start center">
+    <mat-card class="card__example">
+        <mat-card-header>
+            <div mat-card-avatar class="card__example__header-img"></div>
+            <mat-card-title>Exemplo Card</mat-card-title>
+            <mat-card-subtitle>Img-Card</mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src="https://i.pinimg.com/originals/84/be/bc/84bebccc63b8a4e76ba3a846aaabaa1a.jpg" alt="Avanade's Logo">
+        <mat-card-content>
+            <p>
+                Desafio da Aceleração Avanade #2. O objetivo desse desafio é criar uma SPA utilizando Angular. 
+                Devemos possuir apenas 1 pagina contendo no minimo 3 componentes que se utilizam de pelo menos 4 componentes do Material Angular.
+                Clique nos botões abaixo apara alterar o valor total.
+            </p>
+            <p>Valor Total: {{count}}</p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-button (click)="add()">ADD</button>
+            <button mat-button (click)="sub()">SUB</button>
+        </mat-card-actions>
+    </mat-card>
+    <mat-divider></mat-divider>
+</div>

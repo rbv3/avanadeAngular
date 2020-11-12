@@ -1,0 +1,24 @@
+.expansion {
+    margin-top: 1em;
+}
+.expansion__panel {
+    width: 80%;
+    min-width: 450px;
+}
+.expansion__divider {
+    margin: 1em 0px;
+}
+
+//material css
+.example-action-buttons {
+    padding-bottom: 20px;
+}
+
+.example-headers-align .mat-expansion-panel-header-description {
+    justify-content: space-between;
+    align-items: center;
+}
+
+// .example-headers-align .mat-form-field + .mat-form-field {
+//     margin-left: 8px;
+// }

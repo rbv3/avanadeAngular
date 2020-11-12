@@ -1,0 +1,64 @@
+<div class="expansion">
+    <h3>Painel Expansor Simples:</h3>
+    <mat-accordion fxLayout="column" fxLayoutAlign="start center">
+        <mat-expansion-panel (opened)="isOpen = true" (closed)="isOpen = false" class="expansion__panel">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Painel Simples
+                </mat-panel-title>
+                <mat-panel-description>
+                    Clique aqui para {{isOpen? 'fechar' : 'abrir'}}!
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+            <p>Apenas um painel pode ficar aberto por vez</p>
+        </mat-expansion-panel>
+
+        <mat-expansion-panel class="expansion__panel">
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Outro Painel Simples
+                </mat-panel-title>
+                <mat-panel-description>
+                    Contém mais informação sobre paineis simpels
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+            <p>Se esse painel estiver aberto, o anterior estará fechado.</p>
+        </mat-expansion-panel>
+    </mat-accordion>
+
+    <mat-divider class="expansion__divider"></mat-divider>
+
+    <h3>Multi Painel Expansor:</h3>
+    <div class="example-action-buttons">
+        <button mat-button (click)="openPanels()">Expandir Todos</button>
+        <button mat-button (click)="closePanels()">Fechar Todos</button>
+    </div>
+
+    <mat-accordion #multiAccordion="matAccordion" multi>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Multi Painel 1
+                </mat-panel-title>
+                <mat-panel-description>
+                    Oi, tudo bem? Teste os botões acima!
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+            <p>Esses paineis podem abrir juntos!</p>
+        </mat-expansion-panel>
+        <mat-expansion-panel>
+            <mat-expansion-panel-header>
+                <mat-panel-title>
+                    Multi Painel 2
+                </mat-panel-title>
+                <mat-panel-description>
+                    Ola!!! (Ja falei pra testar os botões acima?)
+                </mat-panel-description>
+            </mat-expansion-panel-header>
+            <p>Esses paineis podem abrir juntos!</p>
+        </mat-expansion-panel>
+    </mat-accordion>
+
+    <mat-divider class="expansion__divider"></mat-divider>
+
+</div>
