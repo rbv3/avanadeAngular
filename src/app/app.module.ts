@@ -17,11 +17,19 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatIconModule } from '@angular/material/icon';
+import {MatInputModule} from '@angular/material/input';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import {MatDialogModule} from '@angular/material/dialog';
+
+
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import { CardAnimalComponent } from './card-animal/card-animal.component';
 import { ExpansionInfoComponent } from './expansion-info/expansion-info.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
+import { FormComponent } from './form/form.component';
+import { ResultDialogComponent } from './result-dialog/result-dialog.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +38,9 @@ import { HeaderComponent } from './header/header.component';
     CardAnimalComponent,
     ExpansionInfoComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
+    FormComponent,
+    ResultDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -46,8 +56,14 @@ import { HeaderComponent } from './header/header.component';
     MatCardModule,
     MatDividerModule,
     MatIconModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatSlideToggleModule,
+    MatDialogModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [ ResultDialogComponent ],
 })
 export class AppModule { }

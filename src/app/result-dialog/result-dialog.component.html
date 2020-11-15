@@ -1,0 +1,20 @@
+<h1 mat-dialog-title>Resultado do Form</h1>
+<div mat-dialog-content>
+    <ul>
+        <li>
+            Nome: {{formValues.name}}
+        </li>
+        <li>
+            Mensagem: {{formValues.message}}
+        </li>
+        <li *ngIf="formValues.showImg">
+            <img class="dialog__img" [src]="imgSrc" />
+        </li>
+        <li>
+            Animal: {{formValues.favoriteAnimal}}
+        </li>
+    </ul>
+</div>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close>Close</button>
+</div>
