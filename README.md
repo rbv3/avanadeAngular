@@ -24,11 +24,11 @@ Foram utilizados:
 ### Estrutura:
 
 O projeto consiste de apenas 1 página que se utiliza de múltiplos Components, sendo eles:
+* Header
+* Footer
 * Home: O component principal
     * Possui o Header e o Footer.
     * Utiliza-se das Tabs para alternar entre os componentes: Card Animal; Expansion Info; Form; Cat Images.
-* Header
-* Footer
 * Card Animal
     * Utilização bastante simples do component Card do Angular Material
     * Mostra um valor através da interpolação
