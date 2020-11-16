@@ -13,7 +13,8 @@ import { HeaderComponent } from './header/header.component';
 import { FormComponent } from './form/form.component';
 import { ResultDialogComponent } from './result-dialog/result-dialog.component';
 
-import { SharedModule } from './shared/shared.module'
+import { SharedModule } from './shared/shared.module';
+import { CatImagesComponent } from './cat-images/cat-images.component'
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { SharedModule } from './shared/shared.module'
     FooterComponent,
     HeaderComponent,
     FormComponent,
-    ResultDialogComponent
+    ResultDialogComponent,
+    CatImagesComponent
   ],
   imports: [
     BrowserModule,

@@ -4,12 +4,12 @@ import { GlobalService } from '../shared/global.service';
 @Injectable({
   providedIn: 'root'
 })
-export class ShibeService {
-  url = 'http://shibe.online/api/shibes';
+export class CatService {
+  url = ' https://api.thecatapi.com/v1/images/search';
 
   constructor(private globalService: GlobalService) { }
 
-  getShibeImg(number) {
-    this.globalService.get(this.url + '?count=' + number + '&urls=true&httpsUrls=true').toPromise();
+  getRandomCatImg() {
+    return this.globalService.get(this.url).toPromise();
   }
 }

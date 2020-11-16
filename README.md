@@ -2,6 +2,13 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.3.
 
+## Informações
+Essa aplicação foi desenvolvida para entrega do desafio da Aceleração Avanade Global Dev #2.
+
+A idéia é basicamente demonstrar um breve conhecimento de Angular e da utilização de alguns componentes do Angular Material.
+
+### Estrutura:
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

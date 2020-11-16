@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { ShibeService } from './shibe.service';
+import { CatService } from './cat.service';
 
 describe('ShibeService', () => {
-  let service: ShibeService;
+  let service: CatService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(ShibeService);
+    service = TestBed.inject(CatService);
   });
 
   it('should be created', () => {
