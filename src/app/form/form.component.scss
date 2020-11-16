@@ -3,10 +3,13 @@
     width: 100%;
     margin-top: 1em;
 }
+.form__card {
+    min-width: 450px;
+}
 .form mat-card {
     height: auto;
     width: 50%;
-    min-width: 200px;
+    min-width: 300px;
     min-height: 200px;
 }
 .form__input {

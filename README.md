@@ -49,9 +49,11 @@ O projeto consiste de apenas 1 página que se utiliza de múltiplos Components, 
 O projeto contém apenas 1 serviço, CatService, que utiliza a API: https://thecatapi.com/
 
 O Projeto possui uma pasta Shared, que contém:
-* O SharedModulesos imports, este, contém os imports mais gerais, como ReactiveForms e componentes do Angular Material.
+* O SharedModules, este, contém os imports mais gerais, como ReactiveForms e componentes do Angular Material.
     * É importado no app-modules. 
 * Um GlobalService, que fornece o método GET, utilizado no CatService
+
+O projeto foi feito pra funcionar de modo responsivo para celulares 
 
 ## Development server
 
