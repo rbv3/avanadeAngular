@@ -15,8 +15,8 @@
             <p>Valor Total: {{count}}</p>
         </mat-card-content>
         <mat-card-actions>
-            <button mat-button (click)="add()">ADD</button>
-            <button mat-button (click)="sub()">SUB</button>
+            <button mat-button (click)="add()" matTooltip="Adiciona 1 ao valor acima">ADD</button>
+            <button mat-button (click)="sub()" matTooltip="Subtrai 1 do valor acima">SUB</button>
         </mat-card-actions>
     </mat-card>
     <mat-divider></mat-divider>
