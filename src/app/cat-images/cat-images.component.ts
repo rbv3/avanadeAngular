@@ -27,6 +27,7 @@ export class CatImagesComponent implements OnInit {
       })
       .catch(err => {
         console.error(err);
+        this.imgSrc1 = 'https://assets-global.website-files.com/583347ca8f6c7ee058111b55/5afc770caa130421393fa412_google-doc-error-message.png';
       })
     this.catService.getRandomCatImg()
       .then(res => {
@@ -34,6 +35,7 @@ export class CatImagesComponent implements OnInit {
       })
       .catch(err => {
         console.error(err);
+        this.imgSrc2 = 'https://assets-global.website-files.com/583347ca8f6c7ee058111b55/5afc770caa130421393fa412_google-doc-error-message.png';
       })
     this.catService.getRandomCatImg()
       .then(res => {
@@ -41,6 +43,7 @@ export class CatImagesComponent implements OnInit {
       })
       .catch(err => {
         console.error(err);
+        this.imgSrc3 = 'https://assets-global.website-files.com/583347ca8f6c7ee058111b55/5afc770caa130421393fa412_google-doc-error-message.png';
       })
   }
 
